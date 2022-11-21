@@ -11,6 +11,9 @@
     padding: 20px 80px;
     background: #E3E6F3;
     box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 .nav{
     display: flex;
@@ -55,6 +58,68 @@ position: absolute;
 bottom: -4px;
 left:20px;
 }
+.body{
+ /* background-image: url("https://docs.exideindustries.com/images/no1-automotive-banner-desktop.jpg"); */
+height: 90vh;
+width: 90%; 
+display: flex;
+flex-direction: column;
+padding: 0 80px;
+align-items: flex-start;
+justify-content: center;
+ background-size: cover;
+ background-position: top 25% right 0% ;
+background-repeat: no-repeat; 
+}
+.body h2{
+    padding-bottom: 10px;
 
+}
+.body h1,p{
+color: #088178
+}
+.body button{
+background-color: #29ada4;
+color: rgb(255, 255, 255);
+border: 0;
+border-radius: 20px;
+padding: 14px 80px 14px 65px;
+cursor: pointer;
+font-weight: 700;
+font-size: 15px;
+margin-top: 10px;
+}
 
+.options{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px 80px;
+    
+}
+.op-1{
+    width: 150px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0,0,0,0.03);
+    border: 1px solid #cce7d0;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+.op-1:hover{
+    box-shadow: 10px 10px 54px rgba(70,62,221,0.1);
 
+}
+.options img{
+    margin-bottom: 8px;
+    width: 100%;
+}
+.op-1 h6{
+    display: inline-block;
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: #1a1a1a;
+    background-color: #fddde4;
+}
