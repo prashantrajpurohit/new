@@ -1,14 +1,16 @@
 import "./App.css";
 import { Body } from "./body";
 import { Navbar } from "./Navbar";
-import { Vehicle } from "./vehicles";
+import { Finder } from "./finder";
+import { Footer } from "./Footer";
 
 function App() {
   return (
     <>
       <Navbar />
       <Body />
-      <Vehicle />
+      <Finder />
+      <Footer />
     </>
   );
 }
