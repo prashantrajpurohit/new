@@ -1,3 +1,4 @@
+import { Finder } from "./finder"
 import { Vehicle } from "./vehicles"
 export function Body(){
     return (
@@ -12,7 +13,8 @@ export function Body(){
             </div>
         </section>
         <Vehicle/>
+        <Finder/>
         </>
     )
 
-}
+}                           

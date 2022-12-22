@@ -28,8 +28,8 @@ export function Vehicle(){
                 <img  src="https://www.tatagreenbattery.com/wp-content/uploads/2021/01/inverters.png" alt="img" />
               <h6>INVERTERS</h6>
             </div>
-
         </section>
+
         </>
     )
 }

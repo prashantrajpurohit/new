@@ -1,53 +1,44 @@
 import { Finder } from "./finder"; 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Body } from "./body";
+import { Products } from "./ourproduct";
+import { Link  ,Route, Routes} from "react-router-dom";
+
 export function Navbar(){
 return (
-   
-        <BrowserRouter>
-    <div className="main">
+<>
+  <div className="main">
     <section >
-        <a href="#">BATTERY-WALA</a>
+        <a href="/">BATTERY-WALA</a> 
     </section>
     <div className="nav">
- <li><a  href="#">Home </a></li>
-   <li className=""> <a  href="#" className="ourproduct">Our Product</a></li>
-   <div  className="options-1">
-            {/* <div className="op-1"> */}
-              <a href="">  <img  src="https://www.tatagreenbattery.com/wp-content/uploads/2020/12/two-wheeler-2.png"
-                 
-                 /></a>
-              {/* <h6>TWO-WHEELER</h6> */}
-            {/* </div> */}
-            {/* <div className="op-1"> */}
-              <a href=""><img  src=" https://www.tatagreenbattery.com/wp-content/uploads/2020/12/car-1.png"  /></a>  
-              {/* <h6>CAR</h6> */}
-            {/* </div> */}
-            {/* <div className="op-1"> */}
-              <a href=""> <img  src="https://www.tatagreenbattery.com/wp-content/uploads/2020/12/tractors.png"  /></a> 
-              {/* <h6>TRACTOR</h6> */}
-            {/* </div> */}
-            {/* <div className="op-1"> */}
-              <a href=""> <img  src="https://www.tatagreenbattery.com/wp-content/uploads/2020/12/comm-vehicles.png"  /></a> 
-              {/* <h6>TRUCKS</h6> */}
-            {/* </div> */}
-            {/* <div className="op-1"> */}
-              <a href=""><img  src="https://www.tatagreenbattery.com/wp-content/uploads/2020/12/e-rickshaw1-1-filled-2.png"  /></a>  
-              {/* <h6>E-RICKSHAW</h6> */}
-            {/* </div> */}
-            {/* <div className="op-1"> */}
-               <a href=""><img  src="https://www.tatagreenbattery.com/wp-content/uploads/2021/01/inverters.png"  /></a> 
-              {/* <h6>INVERTERS</h6> */}
-            {/* </div> */}
+ <li><Link  to="/">Home</Link></li>
+   <li  className="ourproduct"> <Link  to="/products">Our Product</Link></li>
 
-        </div>           
- <li><a href="#">Battery Finder</a></li>
- <li><a  href="#">Battery Dealer</a></li>
- <li><a href="#">Help & Support</a></li>
- <li><a href="#">About Us</a></li>
+ <li><Link to="/batteryFinder">Battery Finder</Link></li>
+ <li><Link to="/dealer">Battery Dealer</Link></li>
+ <li><Link to="/help">Help & Support</Link></li>
+ <li><Link to="/about">About Us</Link></li>
     </div>
     </div>
+
+    <Routes>
+        <Route path="/" element={<Body />} />
+        <Route path="/batteryFinder" element={<Finder />} />
+        <Route path="/products" element={<Products />} />
+      </Routes>
+
+</>
+   );
    
-                 </BrowserRouter>
-);
+  }
+   
+  
+  
+  
+  
+  
+  
+  
+  
 
-}
+
