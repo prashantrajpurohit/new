@@ -1,19 +1,20 @@
 import { Finder } from "./finder"
 import { Vehicle } from "./vehicles"
-export function Body(){
+import { Link } from "react-router-dom"
+export function Body() {
     return (
         <>
-        <section className="body">
-            <div className="card">
+            <section className="body">
+                <div className="popup">
 
-        <h2>Find the Perfect</h2>
-        <h1>Battery within Seconds</h1>
-        <p>KNOW MORE ABOUT YOUR BATTERY</p>
-           <a href="#"><button>SHOP NOW</button></a> 
-            </div>
-        </section>
-        <Vehicle/>
-        <Finder/>
+                    <h2>Find the Perfect</h2>
+                    <h1>Battery within Seconds</h1>
+                    <p>KNOW MORE ABOUT YOUR BATTERY</p>
+                    <Link to="/products"><button>SHOP NOW</button></Link>
+                </div>
+            </section>
+            <Vehicle />
+            <Finder />
         </>
     )
 

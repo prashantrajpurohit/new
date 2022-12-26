@@ -1,38 +1,40 @@
-export function Footer(){
-    return(
-        <footer className="footer">
-            <div className="container">
-                <div className="row">
-                    <div className="footer-col">
-                        <h4>company</h4>
-                            <ul>
-                                <li><a href="#">about us</a></li>
-                                <li><a href="#">our services</a></li>
-                                <li><a href="#">privacy policy</a></li>
-                                <li><a href="#">affiliate program</a></li>
-                            </ul>
+export function Footer() {
+    return (
+        <footer className="foot">
+            <div className="cont">
+                <div className="ro">
+                    <div className="foot-col">
+                        <h4>Battery Wala</h4>
+                        <ul>
+                            <li><a href="/products">Products</a></li>
+                            <li><a href="/about">About us</a></li>
+                            <li><a href="/dealer">Dealers</a></li>
+                            <li><a href="/batteryFinder">Battery finder</a></li>
+                        </ul>
                     </div>
-                    <div className="footer-col">
-                        <h4>get help</h4>
-                            <ul>
-                                <li><a href="#">FAQ</a></li>
-                                <li><a href="#">Shipping</a></li>
-                                <li><a href="#">returns</a></li>
-                                <li><a href="#">order</a></li>
-                                <li><a href="#">payment</a></li>
-                            </ul>
+                    <div className="foot-col">
+                        <h4>Get Batteries</h4>
+
+                        <ul>
+                            <li><a href="/products">Car</a></li>
+                            <li><a href="/products">Trucks</a></li>
+                            <li><a href="/products">E-Rickshaw</a></li>
+                            <li><a href="/products">Inverter</a></li>
+                            <li><a href="/products">Tractor</a></li>
+
+                        </ul>
                     </div>
-                    <div className="footer-col">
-                        <h4>online shop</h4>
-                            <ul>
-                                <li><a href="#">watch</a></li>
-                                <li><a href="#">bag</a></li>
-                                <li><a href="#">shoes</a></li>
-                                <li><a href="#">dress</a></li>
-                            </ul>
+                    <div className="foot-col">
+                        <h4>Help & Support</h4>
+                        <ul>
+                            <li><a href="/help">FAQ</a></li>
+                            <li><a href="/help">Shipping</a></li>
+                            <li><a href="/help">returns</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </footer>
+
     )
 }
