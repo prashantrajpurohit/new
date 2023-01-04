@@ -1,13 +1,8 @@
 import React from "react";
-import Select from "react-select";
+import "./finder.css"
+import { New_Arrival } from "./New-Arrival";
 import stateList from "./stateList.json"
-const options = [
-  { label: 'Chocolate', value: '1' },
-  { label: 'Coconut', value: '2' },
-  { label: 'Mint', value: '3' },
-  { label: 'Strawberry', value: '4' },
-  { label: 'Vanilla', value: '5' },
-]
+
 export function Finder() {
   return (
     <div className="battery_finder">
@@ -38,7 +33,7 @@ export function Finder() {
               <option value="" defaultValue="">select state</option>
               {
                 stateList.map((states) => {
-                  return <option value={states.state_name}>{states.state_name}</option>
+                  return <option value={states.state_name} key={states.state_id}>{states.state_name}</option>
 
                 })
               }
@@ -54,6 +49,7 @@ export function Finder() {
             <span>Find Battery</span></a>
         </div>
       </div>
+      <New_Arrival />
     </div>
   );
 }

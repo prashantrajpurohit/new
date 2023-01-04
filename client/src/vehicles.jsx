@@ -1,4 +1,5 @@
 import { CATEGORIES } from "./constant"
+import "./vehicle.css"
 export function Vehicle() {
 
   return (

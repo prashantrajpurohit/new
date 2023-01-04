@@ -1,5 +1,6 @@
 import { Finder } from "./finder"
 import { Vehicle } from "./vehicles"
+import "./body.css"
 import { Link } from "react-router-dom"
 export function Body() {
     return (

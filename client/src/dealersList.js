@@ -6,7 +6,7 @@ export const DEALERLIST=[
       Rating : 5,
    active_products: 3, 
     Actions: 1,
-    SNo : 1,
+    Sno : 1,
     Email:"abc@gmail.com"   ,
     }
 ]
